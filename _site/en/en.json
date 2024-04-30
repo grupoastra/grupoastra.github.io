@@ -1,0 +1,36 @@
+{
+    "navbar":{
+        "Semilleros":"Research Groups" ,
+        "Eventos": "Events",
+        "En_curso":"In Progress",
+        "Contacto": "Contact"
+    },
+    "voyager_layout":{
+        "subtitle":"Aeronautics and Astronautics Research Group"
+    },
+    "deltav_layout":{
+        "subtitle":"Rocketry and Propulsion Research Group"
+    },
+    "menu_voyager":{
+        "Informacion": "Information",
+        "Nosotros":"About us",
+        "Contacto":"Contact",
+        "Logros":"Achievements",
+        "Competencias":"Competitions",
+        "Publicaciones":"Papers",
+        "Lines":"Research Areas",
+        "Aero":"Aeronautics",
+        "Data":"Comms and Data analysis",
+        "Control":"Control and Orbital Mechanics"
+    },
+    "menu_deltav":{
+        "Informacion": "Information",
+        "Nosotros":"About us",
+        "Contacto":"Contact",
+        "Logros":"Achievements",
+        "Competencias":"Competitions",
+        "Publicaciones":"Papers",
+        "Proyectos":"Research projects",
+        "Solid":"Solid rocket propellants",
+        "Turbina":"Boeing Turbine"}
+}
