@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Aerohub Redirect</title>
+</head>
+<body>
+<script>
+    var lang = navigator.language || navigator.userLanguage;
+    if (lang.indexOf('en') == 0)
+        window.location = '/en/aerohub';
+    else
+        window.location = '/es/aerohub';
+</script>
+</body>
+</html>
