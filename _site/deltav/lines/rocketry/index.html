@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CICTA | X Congreso Internacional de Ciencia y Tecnología Aeroespacial</title>
+    <meta name="description" content="Página web del semillero de cohetería y propulsión Delta V, 
+    parte del Grupo de investigación ASTRA de la Universidad de Antioquia.">
+    <title>Delta V | Línea de cohetería</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -12,21 +14,15 @@
     <link rel="stylesheet" href="/assets/custom.css">
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/space/3.2.1/space.min.js"></script>
     <script src="/js/scripts.js"></script>
 
     <style>
-        .menu-list a.is-active{
-            background-color: var(--cicta-purple-dark);
+        .menu-list a.is-active {
+            background-color: var(--deltav);
+            color: #fff;
         }
         .tabs li.is-active a{
-            color: var(--cicta-purple-dark);
-        }
-        #background{
-            background-color: var(--cicta-purple-dark);
-        }
-        #text-white {
-            color: white;
+            color: var(--deltav);
         }
     </style>
 
@@ -81,42 +77,101 @@
 </nav>
 
 <body>
-    <section class="hero is-halfheight-mobile is-cicta">
+    <!-- ! COLOR IS VOYAGER -->
+    <section class="hero is-halfheight-mobile is-deltav">
         <div class="hero-body">
             <div class="container">
-                <p class="title" id="text-white">CICTA</p>
-                <p class="subtitle" id="text-white">X Congreso Internacional de Ciencia y Tecnología Aeroespacial</p>
+                <p class="title">Delta V</p>
+                <p class="subtitle">Semillero de cohetería y propulsión</p>
+                <hr id="color-grey">
+                <p class="subtitle">Línea de cohetería</p>
             </div>
         </div>
     </section>
 
-    <section class="section" id="ref">
+    <div class="section">
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-4">
                     <aside class="menu">
     <p class="menu-label">Información</p>
     <ul class="menu-list">
-        <li><a href="/events/cicta">Conferencia</a></li>
-        <li><a href="/events/cicta/subjects">Temáticas</a></li>
-        <li><a href="/events/cicta#contact">Contacto</a></li>
+        <li><a href="/deltav">Nosotros</a></li>
+        <li><a href="/contact">Contacto</a></li>
     </ul>
-    <!-- <p class="menu-label">CICTA X</p>
+    <p class="menu-label">Logros</p>
     <ul class="menu-list">
-        <li><a href="/events/cicta/authors">For authors</a></li>
-        <li><a href="/events/cicta/registration">Registration</a></li>
-        <li><a href="#programme">Programme</a></li>
-        <li><a href="#ubication">Ubication</a></li>
-    </ul> -->
+        <li><a href="/deltav/contests">Competencias</a></li>
+        <li><a href="/deltav/publications">Publicaciones</a></li>
+    </ul>
+    <p class="menu-label">Linea de investigación</p>
+    <ul class="menu-list">
+        <li><a href="/deltav/lines/rocketry">Cohetería</a></li>
+    </ul>
+    <p class="menu-label">Proyectos de investigación</p>
+    <ul class="menu-list">
+        <li><a href="/deltav/projects/solidmotor">Motores de propelente sólido</a></li>
+        <li><a href="/deltav/projects/boeingturbine">Turbina Boeing</a></li>
+    </ul>
 </aside>
                 </div>
-        
+
                 <div class="column is-8">
-                    
+                    <div class="tabs is-centered">
+    <ul>
+        <li id="index-tab" class="is-active">
+            <a onClick="switchToIndex()">
+                <span class="icon is-small"><i class="fa-solid fa-rocket"></i></span>
+                <span>¿Quiénes somos?</span>
+            </a>
+        </li>
+        <li id="projects-tab">
+            <a onClick="switchToProjects()">
+                <span class="icon is-small"><i class="fa-solid fa-folder"></i></span>
+                <span>Proyectos</span>
+            </a>
+        </li>
+        <li id="support-tab">
+            <a onClick="switchToSupport()">
+                <span class="icon is-small"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                <span>Apóyanos</span>
+            </a>
+        </li>
+        <li id="socials-tab">
+            <a onClick="switchToSocials()">
+                <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
+                <span>Redes sociales</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="content">
+    <p>CONTENIDO.</p>
+</div>
+
+
+
+<script>
+    function switchToIndex() {
+        window.location.href = "/deltav/lines/rocketry";
+    }
+    function switchToProjects() {
+        window.location.href = "projects";
+    }
+    function switchToSupport() {
+        window.location.href = "support";
+    }
+    function switchToSocials() {
+        window.location.href = "socials";
+    }
+</script>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 
 <footer class="footer">
