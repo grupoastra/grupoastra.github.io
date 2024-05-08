@@ -31,8 +31,18 @@ async function redirectURL() {
             if (valorEnURL('/es/')) {
                 window.location.href = `/es/${link}`
             }
+            // Restringir el la navegacion por el contenido en 
+            // Inglés fuera del CICTA
             else if (valorEnURL('/en/')){
-                window.location.href = `/en/${link}`
+                if (link.indexOf('/cicta') !== -1) {  
+
+                    window.location.href = `/en/${link}`
+                }
+                else{
+                    window.location.href = `/es/${link}`
+
+                }
+                
             }
         });
     })
