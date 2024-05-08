@@ -1,4 +1,4 @@
-@import ../utilities/mixins
+@import "../utilities/mixins"
 
 $navbar-background-color: $scheme-main !default
 $navbar-box-shadow-size: 0 2px 0 0 !default
@@ -156,7 +156,7 @@ body
   @extend %reset
   color: $navbar-burger-color
   +hamburger($navbar-height)
-  +ltr-property(margin, auto, false)
+  +ltr-property("margin", auto, false)
 
 .navbar-menu
   display: none
@@ -214,7 +214,7 @@ a.navbar-item,
   flex-shrink: 1
 
 .navbar-link:not(.is-arrowless)
-  +ltr-property(padding, 2.5em)
+  +ltr-property("padding", 2.5em)
   &::after
     @extend %arrow
     border-color: $navbar-dropdown-arrow
@@ -352,10 +352,10 @@ a.navbar-item,
     flex-shrink: 0
   .navbar-start
     justify-content: flex-start
-    +ltr-property(margin, auto)
+    +ltr-property("margin", auto)
   .navbar-end
     justify-content: flex-end
-    +ltr-property(margin, auto, false)
+    +ltr-property("margin", auto, false)
   .navbar-dropdown
     background-color: $navbar-dropdown-background-color
     border-bottom-left-radius: $navbar-dropdown-radius
@@ -373,7 +373,7 @@ a.navbar-item,
       padding: 0.375rem 1rem
       white-space: nowrap
     a.navbar-item
-      +ltr-property(padding, 3rem)
+      +ltr-property("padding", 3rem)
       &:focus,
       &:hover
         background-color: $navbar-dropdown-item-hover-background-color
@@ -401,9 +401,9 @@ a.navbar-item,
   .navbar > .container,
   .container > .navbar
     .navbar-brand
-      +ltr-property(margin, -.75rem, false)
+      +ltr-property("margin", -.75rem, false)
     .navbar-menu
-      +ltr-property(margin, -.75rem)
+      +ltr-property("margin", -.75rem)
   // Fixed navbar
   .navbar
     &.is-fixed-bottom-desktop,

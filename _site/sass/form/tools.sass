@@ -40,7 +40,7 @@ $label-colors: $form-colors !default
     justify-content: flex-start
     .control
       &:not(:last-child)
-        +ltr-property(margin, -1px)
+        +ltr-property("margin", -1px)
       &:not(:first-child):not(:last-child)
         .button,
         .input,
@@ -98,7 +98,7 @@ $label-colors: $form-colors !default
       flex-shrink: 0
       &:not(:last-child)
         margin-bottom: 0
-        +ltr-property(margin, 0.75rem)
+        +ltr-property("margin", 0.75rem)
       &.is-expanded
         flex-grow: 1
         flex-shrink: 1
@@ -129,7 +129,7 @@ $label-colors: $form-colors !default
     flex-basis: 0
     flex-grow: 1
     flex-shrink: 0
-    +ltr-property(margin, 1.5rem)
+    +ltr-property("margin", 1.5rem)
     text-align: right
     &.is-small
       font-size: $size-small
@@ -158,7 +158,7 @@ $label-colors: $form-colors !default
       &:not(.is-narrow)
         flex-grow: 1
       &:not(:last-child)
-        +ltr-property(margin, 0.75rem)
+        +ltr-property("margin", 0.75rem)
 
 .control
   box-sizing: border-box

@@ -1,4 +1,4 @@
-@import ../utilities/mixins
+@import "../utilities/mixins"
 
 $content-heading-color: $text-strong !default
 $content-heading-weight: $weight-semibold !default
@@ -72,11 +72,11 @@ $content-table-foot-cell-color: $text-strong !default
     margin-bottom: 1em
   blockquote
     background-color: $content-blockquote-background-color
-    +ltr-property(border, $content-blockquote-border-left, false)
+    +ltr-property("border", $content-blockquote-border-left, false)
     padding: $content-blockquote-padding
   ol
     list-style-position: outside
-    +ltr-property(margin, 2em, false)
+    +ltr-property("margin", 2em, false)
     margin-top: 1em
     &:not([type])
       list-style-type: decimal
@@ -90,7 +90,7 @@ $content-table-foot-cell-color: $text-strong !default
         list-style-type: upper-roman
   ul
     list-style: disc outside
-    +ltr-property(margin, 2em, false)
+    +ltr-property("margin", 2em, false)
     margin-top: 1em
     ul
       list-style-type: circle
@@ -98,7 +98,7 @@ $content-table-foot-cell-color: $text-strong !default
       ul
         list-style-type: square
   dd
-    +ltr-property(margin, 2em, false)
+    +ltr-property("margin", 2em, false)
   figure
     margin-left: 2em
     margin-right: 2em

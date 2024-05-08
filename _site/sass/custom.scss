@@ -1,8 +1,8 @@
-@charset utf-8;
+@charset "utf-8";
 
 // ----- Import -----
 // Import Icons
-@import ../assets/fontawesome/scss/fontawesome.scss;
+@import "../assets/fontawesome/scss/fontawesome.scss";
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
@@ -10,8 +10,8 @@
 
 // ----- Variables -----
 // Replacing values
-$fa-font-path: ../assets/fontawesome/webfonts;
-$family-sans-serif: Nunito, sans-serif;
+$fa-font-path: "../assets/fontawesome/webfonts";
+$family-sans-serif: "Nunito", sans-serif;
 
 // Custom variables
 $primary: #262626;
@@ -19,21 +19,21 @@ $voyager: #262464;
 $deltav: #ff4800ff;
 $codeac: #2E4D6B;
 $cicta: #7606cc;
-$custom-colors: (voyager: ($voyager), deltav: ($deltav), codeac: ($codeac), cicta: ($cicta));
+$custom-colors: ("voyager": ($voyager), "deltav": ($deltav), "codeac": ($codeac), "cicta": ($cicta));
 
 
 // ----- Files and variables to replace -----
 // Icons
-@import ../assets/fontawesome/scss/brands.scss;
-@import ../assets/fontawesome/scss/solid.scss;
+@import "../assets/fontawesome/scss/brands.scss";
+@import "../assets/fontawesome/scss/solid.scss";
 
 // Bulma theme
-@import ../sass/utilities/_all.sass;
-@import ../sass/base/_all.sass;
-@import ../sass/elements/button.sass;
-// @import ../sass/elements/container.sass;
-// @import ../sass/elements/title.sass;
-// @import ../sass/form/_all.sass;
-// @import ../sass/components/navbar.sass;
-@import ../sass/layout/hero.sass;
-// @import ../sass/layout/section.sass;
+@import "../sass/utilities/_all.sass";
+@import "../sass/base/_all.sass";
+@import "../sass/elements/button.sass";
+// @import "../sass/elements/container.sass";
+// @import "../sass/elements/title.sass";
+// @import "../sass/form/_all.sass";
+// @import "../sass/components/navbar.sass";
+@import "../sass/layout/hero.sass";
+// @import "../sass/layout/section.sass";

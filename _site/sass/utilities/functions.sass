@@ -124,7 +124,7 @@
   @if $dividend == 0
     @return 0
   @if $divisor == 0
-    @error Cannot divide by 0
+    @error "Cannot divide by 0"
   @if $divisor == 1
     @return $dividend
   @while $remainder >= $divisor
