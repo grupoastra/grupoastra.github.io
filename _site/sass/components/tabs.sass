@@ -1,4 +1,4 @@
-@import "../utilities/mixins"
+@import ../utilities/mixins
 
 $tabs-border-bottom-color: $border !default
 $tabs-border-bottom-style: solid !default
@@ -80,9 +80,9 @@ $tabs-toggle-link-active-color: $link-invert !default
       padding-left: 0.75em
   .icon
     &:first-child
-      +ltr-property("margin", 0.5em)
+      +ltr-property(margin, 0.5em)
     &:last-child
-      +ltr-property("margin", 0.5em, false)
+      +ltr-property(margin, 0.5em, false)
   // Alignment
   &.is-centered
     ul
@@ -124,7 +124,7 @@ $tabs-toggle-link-active-color: $link-invert !default
         z-index: 2
     li
       & + li
-        +ltr-property("margin", -#{$tabs-toggle-link-border-width}, false)
+        +ltr-property(margin, -#{$tabs-toggle-link-border-width}, false)
       &:first-child a
         +ltr
           border-top-left-radius: $tabs-toggle-link-radius

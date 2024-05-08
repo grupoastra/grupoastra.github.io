@@ -1,4 +1,4 @@
-@import "../utilities/mixins"
+@import ../utilities/mixins
 
 $level-item-spacing: ($block-spacing * 0.5) !default
 
@@ -22,7 +22,7 @@ $level-item-spacing: ($block-spacing * 0.5) !default
     .level-item
       &:not(:last-child)
         margin-bottom: 0
-        +ltr-property("margin", $level-item-spacing)
+        +ltr-property(margin, $level-item-spacing)
       &:not(.is-narrow)
         flex-grow: 1
   // Responsiveness
@@ -59,7 +59,7 @@ $level-item-spacing: ($block-spacing * 0.5) !default
     // Responsiveness
     +tablet
       &:not(:last-child)
-        +ltr-property("margin", $level-item-spacing)
+        +ltr-property(margin, $level-item-spacing)
 
 .level-left
   align-items: center

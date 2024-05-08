@@ -192,7 +192,7 @@ function readCSVFile(){
     fetch(`/js/languageChange_CSV/${page}_content.csv`)
         .then(response => response.text())
         .then(csvdata => {
-            
+            console.log("fetching")
 
             // Split by line break to gets rows Array
             var rowData = csvdata.split('\n');
@@ -204,15 +204,17 @@ function readCSVFile(){
             for (var row = 1; row < rowData.length; row++) {
                 // Split by comma (,) to get column Array
                 let rowColData = rowData[row].split(';');
-                const csvId = rowColData[0];
-                //pendiente : hacer funcion que detecte el idioma y seleccione el índice
+                const csvId = rowColData[0].replaceAll('"','');
+                
                 var textToChange =  rowColData[lang_index]; // 1: es , 2: en
                 
                 // Buscar en las etiquetas HTML (csvElements)
                 for(element of csvElements){
-                    
-                    if ( csvId === element.getAttribute("id") & element.getAttribute("csv") === "true"){
-                        
+                    console.log("second for")
+                    console.log(csvId.valueOf(),element.getAttribute("id"))
+                    console.log( csvId === element.getAttribute("id"))
+                    if ( csvId.valueOf() === element.getAttribute("id").valueOf() & element.getAttribute("csv") === "true"){
+                        console.log("changing")
                         element.innerHTML = textToChange;
                     }                   
                 }

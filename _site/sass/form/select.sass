@@ -16,7 +16,7 @@ $select-colors: $form-colors !default
   &.is-rounded
     select
       border-radius: $radius-rounded
-      +ltr-property("padding", 1em, false)
+      +ltr-property(padding, 1em, false)
   select
     @extend %input
     cursor: pointer
@@ -30,7 +30,7 @@ $select-colors: $form-colors !default
     fieldset[disabled] &:hover
       border-color: $input-disabled-border-color
     &:not([multiple])
-      +ltr-property("padding", 2.5em)
+      +ltr-property(padding, 2.5em)
     &[multiple]
       height: auto
       padding: 0

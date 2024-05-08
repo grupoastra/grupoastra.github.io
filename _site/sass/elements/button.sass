@@ -1,5 +1,5 @@
-@import "../utilities/controls"
-@import "../utilities/mixins"
+@import ../utilities/controls
+@import ../utilities/mixins
 
 $button-color: $text-strong !default
 $button-background-color: $scheme-main !default
@@ -44,7 +44,7 @@ $button-static-background-color: $scheme-main-ter !default
 $button-static-border-color: $border !default
 
 $button-colors: $colors !default
-$button-responsive-sizes: ("mobile": ("small": ($size-small * 0.75), "normal": ($size-small * 0.875), "medium": $size-small, "large": $size-normal), "tablet-only": ("small": ($size-small * 0.875), "normal": ($size-small), "medium": $size-normal, "large": $size-medium)) !default
+$button-responsive-sizes: (mobile: (small: ($size-small * 0.75), normal: ($size-small * 0.875), medium: $size-small, large: $size-normal), tablet-only: (small: ($size-small * 0.875), normal: ($size-small), medium: $size-normal, large: $size-medium)) !default
 
 // The button sizes use mixins so they can be used at different breakpoints
 =button-small
@@ -85,11 +85,11 @@ $button-responsive-sizes: ("mobile": ("small": ($size-small * 0.75), "normal": (
       height: 1.5em
       width: 1.5em
     &:first-child:not(:last-child)
-      +ltr-property("margin", calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width}), false)
-      +ltr-property("margin", $button-padding-horizontal * 0.25)
+      +ltr-property(margin, calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width}), false)
+      +ltr-property(margin, $button-padding-horizontal * 0.25)
     &:last-child:not(:first-child)
-      +ltr-property("margin", $button-padding-horizontal * 0.25, false)
-      +ltr-property("margin", calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width}))
+      +ltr-property(margin, $button-padding-horizontal * 0.25, false)
+      +ltr-property(margin, calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width}))
     &:first-child:last-child
       margin-left: calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width})
       margin-right: calc(#{-0.5 * $button-padding-horizontal} - #{$button-border-width})
@@ -292,7 +292,7 @@ $button-responsive-sizes: ("mobile": ("small": ($size-small * 0.75), "normal": (
   .button
     margin-bottom: 0.5rem
     &:not(:last-child):not(.is-fullwidth)
-      +ltr-property("margin", 0.5rem)
+      +ltr-property(margin, 0.5rem)
   &:last-child
     margin-bottom: -0.5rem
   &:not(:last-child)
@@ -315,9 +315,9 @@ $button-responsive-sizes: ("mobile": ("small": ($size-small * 0.75), "normal": (
       &:not(:last-child)
         border-bottom-right-radius: 0
         border-top-right-radius: 0
-        +ltr-property("margin", -1px)
+        +ltr-property(margin, -1px)
       &:last-child
-        +ltr-property("margin", 0)
+        +ltr-property(margin, 0)
       &:hover,
       &.is-hovered
         z-index: 2
@@ -348,7 +348,7 @@ $button-responsive-sizes: ("mobile": ("small": ($size-small * 0.75), "normal": (
 @each $bp-name, $bp-sizes in $button-responsive-sizes
   +breakpoint($bp-name)
     @each $size, $value in $bp-sizes
-      @if $size != "normal"
+      @if $size != normal
         .button.is-responsive.is-#{$size}
           font-size: $value
       @else
