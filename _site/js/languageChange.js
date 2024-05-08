@@ -210,10 +210,8 @@ function readCSVFile(){
                 
                 // Buscar en las etiquetas HTML (csvElements)
                 for(element of csvElements){
-                    console.log("second for")
-                    console.log(csvId.valueOf(),element.getAttribute("id"))
-                    console.log( csvId === element.getAttribute("id"))
-                    if ( csvId.valueOf() === element.getAttribute("id").valueOf() & element.getAttribute("csv") === "true"){
+                    
+                    if ( (csvId === element.getAttribute("id") || csvId === element.getAttribute("csv_id")) & element.getAttribute("csv") === "true"){
                         console.log("changing")
                         element.innerHTML = textToChange;
                     }                   
