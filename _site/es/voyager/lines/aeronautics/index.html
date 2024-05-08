@@ -121,7 +121,7 @@
                     <div class="tabs is-centered">
     <ul>
         <li id="index-tab" class="is-active">
-            <a onClick="switchToIndex()">
+            <a data-link =voyager/lines/aeronautics>
                 <span class="icon is-small"><i class="fa-solid fa-plane-up"></i></span>
                 <span>¿Quiénes somos?</span>
             </a>
@@ -163,6 +163,7 @@
 
 <script>
     function switchToIndex() {
+
         window.location.href = "/voyager/lines/aeronautics";
     }
     function switchToDBF() {

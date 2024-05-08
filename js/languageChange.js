@@ -163,6 +163,9 @@ function readCSVFile(){
     else if (url.indexOf("inprogress")!== -1){
         page = "inprogress";
     }
+    else if (url.indexOf("cicta")!== -1){
+        page = "cicta";
+    }
     else if (url.split('/').length <= 5){
         page = "index";
     }
@@ -179,6 +182,8 @@ function readCSVFile(){
     fetch(`/js/languageChange_CSV/${page}_content.csv`)
         .then(response => response.text())
         .then(csvdata => {
+            
+
             // Split by line break to gets rows Array
             var rowData = csvdata.split('\n');
             
@@ -195,7 +200,9 @@ function readCSVFile(){
                 
                 // Buscar en las etiquetas HTML (csvElements)
                 for(element of csvElements){
+                    
                     if ( csvId === element.getAttribute("id") & element.getAttribute("csv") === "true"){
+                        
                         element.innerHTML = textToChange;
                     }                   
                 }
