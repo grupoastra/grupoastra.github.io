@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aerohub | Laboratorio y semilleros</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/space/3.2.1/space.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/languageChange.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW62XH43P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BJW62XH43P');
+</script>
+</head>
+
+<nav class="navbar is-dark">
+    <div class="navbar-brand">
+        <a href="/" class="navbar-item">
+            <img src="/icons/astra_blanco.png">
+        </a>
+
+        <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar" style="padding-right: 5em;">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </div>
+    </div>
+
+    <div class="navbar-menu" id="navbar">
+        <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" data-section ="navbar" data-value ="Semilleros" >Semilleros</a>
+                <div class="navbar-dropdown">
+                    <a data-link="deltav" class="navbar-item">Delta V</a>
+                    <a data-link="voyager" class="navbar-item">Voyager</a>
+                    <hr class="navbar-divider">
+                    <a data-link="aerohub" class="navbar-item">Aerohub</a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" data-section ="navbar" data-value ="Eventos">Eventos</a>
+                <div class="navbar-dropdown">
+                    <a data-link="events/codeac/" class="navbar-item">CODEAC</a>
+                    <a data-link="events/cicta/" class="navbar-item">CICTA</a>
+                </div>
+            </div>
+            <!-- ! REV - revisar links -->
+            <a data-link="inprogress" class="navbar-item" data-section ="navbar" data-value ="En_curso">En curso</a>
+            <a data-link="contact" class="navbar-item" data-section ="navbar" data-value ="Contacto">Contacto</a>
+            <a class="navbar-item hero.is-white" data-language = "es" style="display: none;">ES</a>                
+            <a class="navbar-item hero.is-white" data-language = "en" style="display: none;">EN</a>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <section class="hero is-halfheight-mobile is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <p class="title">Aerohub</p>
+                <p class="subtitle">Información para estudiantes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <aside class="menu">
+    <p class="menu-label">Información</p>
+    <ul class="menu-list">
+        <li><a href="/aerohub">Laboratorio y semilleros</a></li>
+        <li><a href="/aerohub/aerospace">Pregrado de Ing. Aeroespacial</a></li>
+    </ul>
+</aside>
+                </div>
+        
+                <div class="column is-8">
+                    <div class="tabs is-centered">
+    <ul>
+        <li id="lafinca-tab" class="is-active">
+            <a onClick="switchToLaFinca()">
+                <span class="icon is-small"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <span>Lab 'La Finca'</span>
+            </a>
+        </li>
+        <li id="voyager-tab">
+            <a onClick="switchToVoyager()">
+                <span class="icon is-small"><img src="/icons/voyager_main_black.svg"></span>
+                <span>Voyager</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<div id="lafinca-tab-content">
+    <h1 class="title">Laboratorio 'La Finca'</h1>
+    <div class="content">
+        <p>La disponibilidad actual de los espacios del laboratorio se encuentra distribuida de la siguiente
+            manera:</p>
+        <div align="center">
+            <iframe class="is-customframe-docs" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBgNBpDLhdWaWTXhBcgzqBLaR6bvKGmzqTvpkVMfhoLlR0UipJsh-9NVL7jHCOB8s44uYOhgXSqKV4/pubhtml?widget=true"></iframe>
+        </div>
+        <br>
+        <p>Para hacer uso de los espacios del laboratorio y sus equipos, debes llenar el siguiente formulario y 
+            esperar la respuesta:</p>
+        <div align="center">
+            <iframe class="is-customframe-docs" src="https://docs.google.com/forms/d/e/1FAIpQLSeyzi2tVrVhp6q39__Tx9-DNwxcYVSg_TjuoIwBhI4Iitfjkg/viewform?embedded=true"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="is-hidden" id="voyager-tab-content">
+    <h1 class="title">Voyager</h1>
+    <h2 class="subtitle">Componentes y material bibliográfico</h2>
+    <div class="content">
+        <p>Aquí puedes visualizar los componentes y el material bibliográfico disponible para préstamo.</p>
+        <div align="center">
+            <iframe class="is-customframe-docs" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRA6kWar4EBXKLN4REIfc1wzqKwieSi_3wysSiZQaf2YRA5qXbpmpPs2SXZijZVYNi3c7mXXVg9p7Pg/pubhtml?widget=true&amp;headers=false"></iframe>
+        </div>
+        <br>
+        <p>Para realizar el préstamo de componentes o libros debes llenar el siguiente formulario.</p>
+        <div align="center">
+            <iframe class="is-customframe-docs" src="https://docs.google.com/forms/d/e/1FAIpQLSfHR-1LM-1b5mCKOk079vttVCPIyQGhvT-_KTcUOignhYoDYQ/viewform?embedded=true"></iframe>
+        </div>
+    </div>
+
+    <h2 class="subtitle">Sharepoint</h2>
+    <div class="content">
+        <p>Para ir a <b>Sharepoint</b> ingresa a este 
+            <a href="https://udeaeduco.sharepoint.com/sites/Voyager2" target="_blank"><u>link</u></a> 
+            con tu correo institucional.</p>
+    </div>
+</div>
+
+
+
+<script>
+    function switchToLaFinca() {
+        removeActive();
+        hideAll();
+        $("#lafinca-tab").addClass("is-active");
+        $("#lafinca-tab-content").removeClass("is-hidden");
+    }
+
+    function switchToVoyager() {
+        removeActive();
+        hideAll();
+        $("#voyager-tab").addClass("is-active");
+        $("#voyager-tab-content").removeClass("is-hidden");
+    }
+
+    function removeActive() {
+        $("li").each(function () {
+            $(this).removeClass("is-active");
+        });
+    }
+
+    function hideAll() {
+        $("#lafinca-tab-content").addClass("is-hidden");
+        $("#voyager-tab-content").addClass("is-hidden");
+    }
+</script>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer class="footer">
+    <div class="content has-text-centered is-small">
+        <p><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/unidades-academicas/ingenieria/estudiar-facultad/pregrados/ingenieria-aeroespacial" target="_blank">Ingeniería Aeroespacial</a> 
+            | 
+            <a href="https://www.udea.edu.co/" target="_blank">Universidad de Antioquia</a></p>
+    </div>
+</footer>
+
+</html>

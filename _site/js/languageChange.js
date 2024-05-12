@@ -31,8 +31,18 @@ async function redirectURL() {
             if (valorEnURL('/es/')) {
                 window.location.href = `/es/${link}`
             }
+            // Restringir el la navegacion por el contenido en 
+            // Inglés fuera del CICTA
             else if (valorEnURL('/en/')){
-                window.location.href = `/en/${link}`
+                if (link.indexOf('/cicta') !== -1) {  
+
+                    window.location.href = `/en/${link}`
+                }
+                else{
+                    window.location.href = `/es/${link}`
+
+                }
+                
             }
         });
     })
@@ -79,6 +89,9 @@ function valorEnURL(valor) {
   
 
 function languageButtons(){
+     
+
+
     // Funcion boton Spanish de navbar  
     var spanish = document.querySelector('.navbar-item[data-language="es"]');
 
@@ -128,6 +141,16 @@ function languageButtons(){
             window.location.href = nuevaURL;  
             }
         });
+
+        // Mostrar botones
+        var url = window.location.href; 
+
+        if (url.includes("cicta")) {
+
+            spanish.style.display ="inherit";
+            english.style.display ="inherit";
+
+        }
 }  
 
 
@@ -150,6 +173,9 @@ function readCSVFile(){
     else if (url.indexOf("inprogress")!== -1){
         page = "inprogress";
     }
+    else if (url.indexOf("cicta")!== -1){
+        page = "cicta";
+    }
     else if (url.split('/').length <= 5){
         page = "index";
     }
@@ -166,6 +192,8 @@ function readCSVFile(){
     fetch(`/js/languageChange_CSV/${page}_content.csv`)
         .then(response => response.text())
         .then(csvdata => {
+            console.log("fetching")
+
             // Split by line break to gets rows Array
             var rowData = csvdata.split('\n');
             
@@ -176,13 +204,15 @@ function readCSVFile(){
             for (var row = 1; row < rowData.length; row++) {
                 // Split by comma (,) to get column Array
                 let rowColData = rowData[row].split(';');
-                const csvId = rowColData[0];
-                //pendiente : hacer funcion que detecte el idioma y seleccione el índice
+                const csvId = rowColData[0].replaceAll('"','');
+                
                 var textToChange =  rowColData[lang_index]; // 1: es , 2: en
                 
                 // Buscar en las etiquetas HTML (csvElements)
                 for(element of csvElements){
-                    if ( csvId === element.getAttribute("id") & element.getAttribute("csv") === "true"){
+                    
+                    if ( (csvId === element.getAttribute("id") || csvId === element.getAttribute("csv_id")) & element.getAttribute("csv") === "true"){
+                        console.log("changing")
                         element.innerHTML = textToChange;
                     }                   
                 }

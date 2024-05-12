@@ -1,0 +1,72 @@
+---
+title: Línea de aeronáutica
+layout: voyager
+---
+
+
+<div class="tabs is-centered">
+    <ul>
+        <li id="index-tab">
+            <a  data-link =voyager/lines/aeronautics>
+                <span class="icon is-small"><i class="fa-solid fa-plane-up"></i></span>
+                <span>¿Quiénes somos?</span>
+            </a>
+        </li>
+        <li id="dbf-tab" class="is-active">
+            <a onClick="switchToDBF()">
+                <span class="icon is-small"><i class="fa-solid fa-trophy"></i></span>
+                <span>DBF</span>
+            </a>
+        </li>
+        <li id="projects-tab">
+            <a onClick="switchToProjects()">
+                <span class="icon is-small"><i class="fa-solid fa-folder"></i></span>
+                <span>Proyectos</span>
+            </a>
+        </li>
+        <li id="support-tab">
+            <a onClick="switchToSupport()">
+                <span class="icon is-small"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                <span>Apóyanos</span>
+            </a>
+        </li>
+        <li id="socials-tab">
+            <a onClick="switchToSocials()">
+                <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
+                <span>Redes sociales</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="content">
+    <p>Design Build Fly es una competencia de aeronaves organizada anualmente por el Instituto Americano de Aeronáutica y
+        Astronáutica (AIAA), con el objetivo de que estudiantes de todo el mundo prueben sus conocimientos,
+        destrezas e innovación en el sector aeronáutico, realizando un avión no tripulado y controlado por radio control que
+        cumpla con el perfil de la misión planteada.</p>
+    <p>En el año 2024 la competencia, en su 28° edición, tomará lugar en Wichita, KS, Estados Unidos. La misión para este año
+        es diseñar, construir, probar y volar una aeronave capaz de cumplir todos los requerimientos designados anteriormente
+        por la competencia.</p>
+</div>
+
+
+
+<script>
+    function switchToIndex() {
+        window.location.href = "/voyager/lines/aeronautics";
+    }
+    function switchToDBF() {
+        window.location.href = "designbuildfly";
+    }
+    function switchToProjects() {
+        window.location.href = "projects";
+    }
+    function switchToSupport() {
+        window.location.href = "support";
+    }
+    function switchToSocials() {
+        window.location.href = "socials";
+    }
+</script>

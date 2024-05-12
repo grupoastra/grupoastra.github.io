@@ -1,0 +1,64 @@
+---
+title: Línea de cohetería
+layout: deltav
+---
+
+
+<div class="tabs is-centered">
+    <ul>
+        <li id="index-tab">
+            <a onClick="switchToIndex()">
+                <span class="icon is-small"><i class="fa-solid fa-rocket"></i></span>
+                <span>¿Quiénes somos?</span>
+            </a>
+        </li>
+        <li id="projects-tab">
+            <a onClick="switchToProjects()">
+                <span class="icon is-small"><i class="fa-solid fa-folder"></i></span>
+                <span>Proyectos</span>
+            </a>
+        </li>
+        <li id="support-tab" class="is-active">
+            <a onClick="switchToSupport()">
+                <span class="icon is-small"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                <span>Apóyanos</span>
+            </a>
+        </li>
+        <li id="socials-tab">
+            <a onClick="switchToSocials()">
+                <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
+                <span>Redes sociales</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="content">
+    <h1 class="title">¿Por que apoyarnos?</h1>
+    <ul>
+        <li>Serás incluido en contenido promocional desarrollado por el equipo en redes sociales, en la aeronave y en los uniformes.</li>
+        <li>Aportarás al desarrollo profesional de los miembros del equipo, brindándoles recursos y herramientas para potenciar sus capacidades y poner en práctica sus conocimientos.</li>
+        <li>Contribuirás al desarrollo aeroespacial de Colombia y Latinoamérica permitiendo avances con nuevos materiales y métodos de manufactura.</li>
+        <li>Promoverás la participación en competencias de investigación y así, desarrollar proyectos innovadores donde se aplicarán los conocimientos adquiridos a la solución de retos del sector.</li>
+        <li>Los futuros profesionales del equipo tendrán la oportunidad de conocer la compañía y de estar en disposición de trabajar en ella.</li>
+    </ul>
+</div>
+
+
+
+<script>
+    function switchToIndex() {
+        window.location.href = "/deltav/lines/rocketry";
+    }
+    function switchToProjects() {
+        window.location.href = "projects";
+    }
+    function switchToSupport() {
+        window.location.href = "support";
+    }
+    function switchToSocials() {
+        window.location.href = "socials";
+    }
+</script>
