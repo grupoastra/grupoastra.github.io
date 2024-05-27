@@ -111,6 +111,11 @@
     display: none;
 }
 
+/* Logo config */
+.is-logo {
+    display: flex;
+    align-items: center;
+}
 
 
 

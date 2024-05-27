@@ -4,6 +4,7 @@ layout: deltav
 ---
 
 
+<h1 class="title" style="text-align: -webkit-center;">Línea de investigación - Volta</h1>
 <div class="tabs is-centered">
     <ul>
         <li id="index-tab">
@@ -18,6 +19,18 @@ layout: deltav
                 <span>Proyectos</span>
             </a>
         </li>
+        <li id="training-tab">
+            <a onClick="switchToTraining()">
+                <span class="icon is-small"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span>Formación</span>
+            </a>
+        </li>
+        <!-- <li id="achievements-tab">
+            <a onClick="switchToAchievements()">
+                <span class="icon is-small"><i class="fa-solid fa-award"></i></span>
+                <span>Logros</span>
+            </a>
+        </li> -->
         <li id="support-tab" class="is-active">
             <a onClick="switchToSupport()">
                 <span class="icon is-small"><i class="fa-solid fa-hand-holding-heart"></i></span>
@@ -27,7 +40,7 @@ layout: deltav
         <li id="socials-tab">
             <a onClick="switchToSocials()">
                 <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
-                <span>Redes sociales</span>
+                <span>Contacto</span>
             </a>
         </li>
     </ul>
@@ -35,15 +48,23 @@ layout: deltav
 
 
 
+<h1 class="title">¿Por qué colaborar con nosotros?</h1>
 <div class="content">
-    <h1 class="title">¿Por que apoyarnos?</h1>
+    <p>Al apoyar a <b>Volta</b> y nuestra misión <b>Legacy</b>, usted estará invirtiendo en el futuro de la ciencia y la 
+        tecnología en Colombia. Su colaboración nos permitirá:</p>
+
     <ul>
-        <li>Serás incluido en contenido promocional desarrollado por el equipo en redes sociales, en la aeronave y en los uniformes.</li>
-        <li>Aportarás al desarrollo profesional de los miembros del equipo, brindándoles recursos y herramientas para potenciar sus capacidades y poner en práctica sus conocimientos.</li>
-        <li>Contribuirás al desarrollo aeroespacial de Colombia y Latinoamérica permitiendo avances con nuevos materiales y métodos de manufactura.</li>
-        <li>Promoverás la participación en competencias de investigación y así, desarrollar proyectos innovadores donde se aplicarán los conocimientos adquiridos a la solución de retos del sector.</li>
-        <li>Los futuros profesionales del equipo tendrán la oportunidad de conocer la compañía y de estar en disposición de trabajar en ella.</li>
+        <li><b>Fomentar la educación STEM:</b> Inspirar a jóvenes a seguir carreras en ciencia, tecnología, ingeniería
+            y matemáticas.</li>
+        <li><b>Impulsar la innovación:</b> Desarrollar nuevas tecnologías y soluciones en el campo aeroespacial.
+        <li><b>Fortalecer la investigación:</b> Realizar investigaciones científicas y contribuir al conocimiento aeroespacial.
+        <li><b>Representar a Colombia:</b> Participar en competencias internacionales y poner en alto el nombre del país.</li>
+        <li><b>Crear un legado:</b> Construir una base sólida para el desarrollo aeroespacial en Colombia y dejar un
+            impacto duradero en la sociedad.</li>
     </ul>
+
+    <p>Su apoyo es fundamental para que podamos seguir cumpliendo nuestra misión y visión. ¡Únete a nosotros y sé parte del legado
+        aeroespacial colombiano!</p>
 </div>
 
 
@@ -54,6 +75,12 @@ layout: deltav
     }
     function switchToProjects() {
         window.location.href = "projects";
+    }
+    function switchToTraining() {
+        window.location.href = "training";
+    }
+    function switchToAchievements() {
+        window.location.href = "achievements";
     }
     function switchToSupport() {
         window.location.href = "support";

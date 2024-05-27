@@ -107,7 +107,7 @@
     </ul>
     <p class="menu-label">Líneas de investigación</p>
     <ul class="menu-list">
-        <li><a href="/voyager/lines/aeronautics">Aeronáutica</a></li>
+        <li><a href="/voyager/lines/aeronautics">Aeronáutica | <b>Icarus</b></a></li>
         <li><a href="/voyager/lines/commsdata">Comunicación y análisis de datos</a></li>
         <li><a href="/voyager/lines/orbitalcontrol">Control y mecánica orbital</a></li>
     </ul>
@@ -115,7 +115,8 @@
                 </div>
 
                 <div class="column is-8">
-                    <div class="tabs is-centered">
+                    <h1 class="title" style="text-align: -webkit-center;">Línea de investigación - Icarus</h1>
+<div class="tabs is-centered">
     <ul>
         <li id="index-tab" class="is-active">
             <a onClick="switchToIndex()">
@@ -135,16 +136,10 @@
                 <span>Proyectos</span>
             </a>
         </li>
-        <li id="support-tab">
-            <a onClick="switchToSupport()">
-                <span class="icon is-small"><i class="fa-solid fa-hand-holding-heart"></i></span>
-                <span>Apóyanos</span>
-            </a>
-        </li>
         <li id="socials-tab">
             <a onClick="switchToSocials()">
                 <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
-                <span>Redes sociales</span>
+                <span>Contacto</span>
             </a>
         </li>
     </ul>
@@ -153,7 +148,21 @@
 
 
 <div class="content">
-    <p>CONTENIDO.</p>
+    <p>La línea de investigación aeronáutica <b>Icarus</b> es una rama del semillero de investigación 
+        <b><span style="color: var(--voyager);">Voyager</span></b> que profundiza en los proyectos relacionados con
+        la aeronáutica, como es el diseño de aeronaves y drones, estimación y verificación de capacidades, construcción
+        y manufactura con métodos y materiales innovadores, vuelo y puesta a prueba de cada aeronave o dron.</p>
+    <p><b>Icarus</b> se constituye oficialmente en marzo de 2023 dado el gran interés de semilleristas en el sector
+        aeronáutico y en competencias tipo diseño, construcción y vuelo tanto nacionales como internacionales con el
+        objetivo de aprender y mejorar todas las técnicas y métodos desde un enfoque de ingeniería, para finalmente
+        lograr una buena integración de sistemas. Actualmente <b>Icarus</b> cuenta con 45 miembros y ha participado en
+        competencias nacionales como la Zagi AESS Race, obteniendo el primer puesto en la categoría profesional; e
+        internacionales como el Design, Build & Fly de la AIAA, obteniendo el puesto 21 en su primera participación de
+        107 prestigiosas universidades alrededor del mundo.</p>
+    <div align="center">
+        <img id="voyager-size-mobile" src="/img/voyager/Icarus_team2023.jpg" alt="Miembros de línea de investigación Icarus">
+        <figcaption class="is-caption">Miembros de 'Icarus'</figcaption>
+    </div>
 </div>
 
 
@@ -167,9 +176,6 @@
     }
     function switchToProjects() {
         window.location.href = "projects";
-    }
-    function switchToSupport() {
-        window.location.href = "support";
     }
     function switchToSocials() {
         window.location.href = "socials";

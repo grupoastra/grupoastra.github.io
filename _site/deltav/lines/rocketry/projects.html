@@ -106,7 +106,7 @@
     </ul>
     <p class="menu-label">Línea de investigación</p>
     <ul class="menu-list">
-        <li><a href="/deltav/lines/rocketry">Cohetería</a></li>
+        <li><a href="/deltav/lines/rocketry">Cohetería | <b>Volta</b></a></li>
     </ul>
     <p class="menu-label">Proyectos de investigación</p>
     <ul class="menu-list">
@@ -117,7 +117,13 @@
                 </div>
 
                 <div class="column is-8">
-                    <div class="tabs is-centered">
+                    <head>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+
+
+<h1 class="title" style="text-align: -webkit-center;">Línea de investigación - Volta</h1>
+<div class="tabs is-centered">
     <ul>
         <li id="index-tab">
             <a onClick="switchToIndex()">
@@ -131,6 +137,18 @@
                 <span>Proyectos</span>
             </a>
         </li>
+        <li id="training-tab">
+            <a onClick="switchToTraining()">
+                <span class="icon is-small"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span>Formación</span>
+            </a>
+        </li>
+        <!-- <li id="achievements-tab">
+            <a onClick="switchToAchievements()">
+                <span class="icon is-small"><i class="fa-solid fa-award"></i></span>
+                <span>Logros</span>
+            </a>
+        </li> -->
         <li id="support-tab">
             <a onClick="switchToSupport()">
                 <span class="icon is-small"><i class="fa-solid fa-hand-holding-heart"></i></span>
@@ -140,7 +158,7 @@
         <li id="socials-tab">
             <a onClick="switchToSocials()">
                 <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
-                <span>Redes sociales</span>
+                <span>Contacto</span>
             </a>
         </li>
     </ul>
@@ -148,47 +166,72 @@
 
 
 
-<div class="content">
-    <p>Esta linea de investigación tiene como objetivo el aprendizaje y profundización de conocimientos
-        teóricos y prácticos relacionados con la cohetería. A continuación se presentan los proyectos
-        de la linea:</p>
-</div>
 
-<h1 class="title" id="aeromodelling">Aeromodelismo</h1>
-<div class="content">
-    <img class="badges" src="https://img.shields.io/badge/-En%20curso-FFDD56" alt="">
 
-    <div class="columns is-multiline is-vcentered">
-        <div class="column is-one-third">
-            <img id="img-logos" src="/img/voyager/blueprint_aeromodelling.png" alt="Aeromodelling blueprint">
+
+<h1 class="title">Misión Legacy</h1>
+<div class="columns is-multiline is-vcentered">
+    <div class="column is-4">
+        <div class="content">
+            <div align="center">
+                <model-viewer src="../../../models/deltav/Rocket.glb" shadow-intensity="3" camera-controls
+                    touch-action="pan-y" camera-orbit="90deg 70deg 6m" ar-scale="fixed"
+                    style="width:200px; height:600px;" alt="Muestra 3D - Cohete de Volta"></model-viewer>
+            </div>
         </div>
-        <div class="column">
-            <p>Este proyecto busca diseñar, construir y volar aeromodelos con el fin de entender los
-                conceptos aeronáuticos generales y específicos que sirvan de base para una futura
-                investigación mas profunda en esta area de conocimiento.</p>
-            <p>Actualmente, se están diseñando y construyendo prototipos, experimentando con diferentes
-                configuraciones aerodinámicas y variados métodos de manufactura. Además con ayuda de
-                telemetría, realizamos un monitoreo del desempeño de la aeronave.</p>
+    </div>
+    <div class="column is-8">
+        <div class="columns">
+            <div class="column">
+                <div class="content">
+                    <p><b>Legacy</b> es una iniciativa de <b>Volta</b> que busca impulsar el desarrollo integral en el
+                        área aeroespacial. A través de esta misión, fomentamos la creación de cohetes experimentales
+                        asequibles y seguros, brindando a entusiastas de todas las edades la oportunidad de diseñar,
+                        construir y lanzar sus propios cohetes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <h2 class="subtitle">¿Cómo lo hacemos?</h2>
+                <div class="content">
+                    <p>A través de dos retos principales:</p>
+                    <ul>
+                        <li><b>Reto 1:</b> Equipos de estudiantes de primeros semestres diseñan y construyen un cohete
+                            con un alcance de 500 metros.</li>
+                        <li><b>Reto 2:</b> Equipos de estudiantes de semestres avanzados diseñan y construyen un cohete
+                            de 3 km con un sistema de eyección redundante.</li>
+                    </ul>
+                    <p>Además, participamos en competencias internacionales como el Latin American Space Challenge,
+                        donde ponemos a prueba nuestras capacidades y compartimos conocimientos con otros equipos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <h2 class="subtitle">¿Por qué Legacy?</h2>
+                <div class="content">
+                    <p>Legacy no solo se trata de construir cohetes, sino de construir un legado en el campo
+                        aeroespacial colombiano. Queremos inspirar a las futuras generaciones de ingenieros y
+                        científicos, brindándoles las herramientas y el conocimiento necesarios para alcanzar sus
+                        sueños. A través de Legacy, fomentamos la educación, la innovación y la colaboración, creando un
+                        semillero de talento que impulsará el desarrollo aeroespacial en Colombia.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<h2 class="subtitle">Objetivos del proyecto</h2>
-<div class="content">
-    <ul>
-        <li>Pronosticar y simular el desempeño de la aeronave teniendo en cuenta los efectos de su
-            diseño a la hora del vuelo.</li>
-        <li>Explorar técnicas de manufactura, implementarlas en los diseños y mejorar su técnica.</li>
-        <li>Crear métodos de diseño de aeronaves que agilicen el proceso conceptual, teniendo en cuenta
-            las restricciones y requerimientos de cada misión de la aeronave.</li>
-        <li>Generar investigación en la aeronáutica y sus aplicaciones en diferentes industrias.</li>
-    </ul>
-</div>
 
-<h2 class="subtitle">Contacto</h2>
+<h2 class="title" align="center">Apoya</h2>
 <div class="content">
-    <p>Si deseas conocer mas información sobre el proyecto, contacta con <b>Mateo Lezama</b> al 
-        correo <a href="mailto:mateo.lezamaf@udea.edu.co"><u>mateo.lezamaf@udea.edu.co</u></a>.</p>
+    <div class="columns is-centered">
+        <div class="column is-5 is-logo">
+            <figure align="center">
+                <img class="is-logo size-mobile-less" src="/icons/logo_conexalab.png" alt="CONEXALAB logo">
+            </figure>
+        </div>
+    </div>
 </div>
 
 
@@ -199,6 +242,12 @@
     }
     function switchToProjects() {
         window.location.href = "projects";
+    }
+    function switchToTraining() {
+        window.location.href = "training";
+    }
+    function switchToAchievements() {
+        window.location.href = "achievements";
     }
     function switchToSupport() {
         window.location.href = "support";

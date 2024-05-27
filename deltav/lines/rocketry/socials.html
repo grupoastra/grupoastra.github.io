@@ -4,6 +4,7 @@ layout: deltav
 ---
 
 
+<h1 class="title" style="text-align: -webkit-center;">Línea de investigación - Volta</h1>
 <div class="tabs is-centered">
     <ul>
         <li id="index-tab">
@@ -18,6 +19,18 @@ layout: deltav
                 <span>Proyectos</span>
             </a>
         </li>
+        <li id="training-tab">
+            <a onClick="switchToTraining()">
+                <span class="icon is-small"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span>Formación</span>
+            </a>
+        </li>
+        <!-- <li id="achievements-tab">
+            <a onClick="switchToAchievements()">
+                <span class="icon is-small"><i class="fa-solid fa-award"></i></span>
+                <span>Logros</span>
+            </a>
+        </li> -->
         <li id="support-tab">
             <a onClick="switchToSupport()">
                 <span class="icon is-small"><i class="fa-solid fa-hand-holding-heart"></i></span>
@@ -27,7 +40,7 @@ layout: deltav
         <li id="socials-tab" class="is-active">
             <a onClick="switchToSocials()">
                 <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
-                <span>Redes sociales</span>
+                <span>Contacto</span>
             </a>
         </li>
     </ul>
@@ -145,6 +158,12 @@ layout: deltav
     }
     function switchToProjects() {
         window.location.href = "projects";
+    }
+    function switchToTraining() {
+        window.location.href = "training";
+    }
+    function switchToAchievements() {
+        window.location.href = "achievements";
     }
     function switchToSupport() {
         window.location.href = "support";
