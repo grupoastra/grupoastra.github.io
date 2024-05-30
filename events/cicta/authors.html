@@ -36,7 +36,9 @@ layout: cicta
 
 
 <h1 class="title">Envió de abstracts</h1>
-Se activara en próximos días.
+Envíe el abstract al correo 
+<a href="mailto:grupoastra@udea.edu.co" aria-label="ASTRA email" target="_blank">grupoastra@udea.edu.co</a> 
+con el asunto: CICTA 2024 - Abstract.
 <!-- <div class="content">
     <div class="field is-horizontal">
         <div class="field-label is-normal">
@@ -351,7 +353,7 @@ Se activara en próximos días.
         <div class="field-label">
         </div>
         <div class="field-body" style="display: block;">
-            <div class="file is-boxed" style="display: block;">
+            <div class="file is-boxed" id="abstracts" style="display: block;">
                 <label class="file-label">
                     <input class="file-input" type="file" name="resume"/>
                     <span class="file-cta">
@@ -360,6 +362,7 @@ Se activara en próximos días.
                         </span>
                         <span class="file-label">Seleccione un archivo</span>
                     </span>
+                    <span class="file-name">Please select a file.</span>
                 </label>
             </div>
         </div>
@@ -379,3 +382,14 @@ Se activara en próximos días.
         </div>
     </div>
 </div> -->
+
+
+<script>
+    const fileInput = document.querySelector("#abstracts input[type=file]");
+    fileInput.onchange = () => {
+      if (fileInput.files.length > 0) {
+        const fileName = document.querySelector("#abstracts .file-name");
+        fileName.textContent = fileInput.files[0].name;
+      }
+    };
+</script>
