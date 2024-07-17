@@ -21,6 +21,18 @@ layout: cicta
 </div>
 
 
+<div class="content">
+    <div class="notification is-success">
+        <p>Los papers más destacados tendrán la oportunidad de ser publicados en la <b>Revista Facultad de 
+        Ingeniería de la Universidad de Antioquia</b>. Tenga en cuenta que los papers deben estar escritos
+        en inglés para ser publicados.</p>
+
+        <p>Encuentre mas información sobre la revista
+        <b><a href="https://revistas.udea.edu.co/index.php/ingenieria/about">aquí</a></b>.</p>
+    </div>
+</div>
+
+
 <h1 class="title">Lineamientos</h1>
 <div class="content">
     <p>Todos los abstracts deben cumplir los siguientes requerimientos:</p>
@@ -389,9 +401,9 @@ con el asunto: CICTA 2024 - Abstract.
 <script>
     const fileInput = document.querySelector("#abstracts input[type=file]");
     fileInput.onchange = () => {
-      if (fileInput.files.length > 0) {
-        const fileName = document.querySelector("#abstracts .file-name");
-        fileName.textContent = fileInput.files[0].name;
-      }
+        if (fileInput.files.length > 0) {
+            const fileName = document.querySelector("#abstracts .file-name");
+            fileName.textContent = fileInput.files[0].name;
+        }
     };
 </script>
