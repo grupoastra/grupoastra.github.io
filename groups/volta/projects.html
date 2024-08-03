@@ -1,55 +1,11 @@
 ---
-title: Línea de cohetería
-layout: deltav
+title: Proyectos
+layout: volta
 ---
 
 <head>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
-
-
-<h1 class="title" style="text-align: -webkit-center;">Línea de investigación - Volta</h1>
-<div class="tabs is-centered">
-    <ul>
-        <li id="index-tab">
-            <a onClick="switchToIndex()">
-                <span class="icon is-small"><i class="fa-solid fa-rocket"></i></span>
-                <span>¿Quiénes somos?</span>
-            </a>
-        </li>
-        <li id="projects-tab" class="is-active">
-            <a onClick="switchToProjects()">
-                <span class="icon is-small"><i class="fa-solid fa-folder"></i></span>
-                <span>Proyectos</span>
-            </a>
-        </li>
-        <li id="training-tab">
-            <a onClick="switchToTraining()">
-                <span class="icon is-small"><i class="fa-solid fa-graduation-cap"></i></span>
-                <span>Formación</span>
-            </a>
-        </li>
-        <!-- <li id="achievements-tab">
-            <a onClick="switchToAchievements()">
-                <span class="icon is-small"><i class="fa-solid fa-award"></i></span>
-                <span>Logros</span>
-            </a>
-        </li> -->
-        <li id="support-tab">
-            <a onClick="switchToSupport()">
-                <span class="icon is-small"><i class="fa-solid fa-hand-holding-heart"></i></span>
-                <span>Apóyanos</span>
-            </a>
-        </li>
-        <li id="socials-tab">
-            <a onClick="switchToSocials()">
-                <span class="icon is-small"><i class="fa-solid fa-envelope"></i></span>
-                <span>Contacto</span>
-            </a>
-        </li>
-    </ul>
-</div>
-
 
 
 <h1 class="title">Misión Legacy</h1>
@@ -110,10 +66,10 @@ layout: deltav
     <div class="column is-5">
         <div class="content">
             <div align="center">
-                <iframe width="100%" height="500px" 
+                <iframe width="80%" height="500px" 
                     src="https://www.youtube.com/embed/Xoo1H2w-NhQ" title="Misión Legacy - Presentación oficial" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    allowfullscreen>
                 </iframe>
             </div>
         </div>
@@ -131,26 +87,3 @@ layout: deltav
         </div>
     </div>
 </div>
-
-
-
-<script>
-    function switchToIndex() {
-        window.location.href = "/deltav/lines/rocketry";
-    }
-    function switchToProjects() {
-        window.location.href = "projects";
-    }
-    function switchToTraining() {
-        window.location.href = "training";
-    }
-    function switchToAchievements() {
-        window.location.href = "achievements";
-    }
-    function switchToSupport() {
-        window.location.href = "support";
-    }
-    function switchToSocials() {
-        window.location.href = "socials";
-    }
-</script>
