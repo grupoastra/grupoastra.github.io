@@ -38,8 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuItem = document.querySelectorAll('#menu-item');
 
     menuItem.forEach(item => {
-        if (item.getAttribute('href') === currentPath) {
+        const itemPath = item.getAttribute('href');
+
+        if (itemPath === currentPath) {
             item.classList.add('is-active');
+        }
+
+        if (currentPath.includes('/voyager/lines/aeronautics/')) {
+            if (itemPath.includes('/voyager/lines/aeronautics/')) {
+                item.classList.add('is-active');
+            }
         }
 
         item.addEventListener('click', function() {
