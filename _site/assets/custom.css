@@ -3,6 +3,8 @@
     --primary-light: #3B3B3B;
     --voyager: #262464;
     --deltav: #ff4800ff;
+    --volta-main: #eb5e24;
+    --volta-secondary: #283747;
 
     --codeac-light: #4e7391;
     --codeac-mid: #2E4D6B;
@@ -14,6 +16,21 @@
     --cicta-blue-dark: #270599;
 
     --bordervalue: 10px;
+}
+
+
+/* *----- Custom variables -----* */
+#voyager {
+    font-weight: bold;
+    color: var(--voyager);
+}
+#deltav {
+    font-weight: bold;
+    color: var(--deltav);
+}
+#volta {
+    font-weight: bold;
+    color: var(--volta-main);
 }
 
 
@@ -66,6 +83,9 @@
 }
 .hero.is-cicta {
     background-image: linear-gradient(141deg, var(--primary) 0%, var(--cicta-blue) 50%, var(--cicta-purple) 70%);
+}
+.hero.is-volta {
+    background-image: linear-gradient(141deg, var(--volta-main) 0%, var(--volta-secondary) 65%);
 }
 
 /* Figure caption */
