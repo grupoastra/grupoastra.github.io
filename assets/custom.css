@@ -43,10 +43,13 @@
 }
 
 /* Sizes */
-#size-logos_nav { width: 10em; vertical-align: middle; }
+#size-logos_nav { width: 8em; vertical-align: middle; }
 #size-logos_index { width: 12em; }
 #size-logos_contact { width: 14em; }
 #size-logos_groups { width: 20em; }
+
+/* Navbar logo */
+#position-logos_nav { align-self: center; }
 
 /* Slideshow */
 #slideshow {
