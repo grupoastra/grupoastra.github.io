@@ -43,9 +43,10 @@
 }
 
 /* Sizes */
+#size-logos_nav { width: 10em; vertical-align: middle; }
 #size-logos_index { width: 12em; }
-#size-logos_groups { width: 20em; }
 #size-logos_contact { width: 14em; }
+#size-logos_groups { width: 20em; }
 
 /* Slideshow */
 #slideshow {

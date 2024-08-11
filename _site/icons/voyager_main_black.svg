@@ -10,9 +10,31 @@
    xml:space="preserve"
    width="2001.7114"
    height="1525.2959"
+   sodipodi:docname="voyager_main_black.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview272"
+   pagecolor="#ffffff"
+   bordercolor="#999999"
+   borderopacity="1"
+   inkscape:showpageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="0.13898943"
+   inkscape:cx="1395.7896"
+   inkscape:cy="737.46618"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg19433" /><defs
    id="defs54"><linearGradient
      id="linearGradient3158"><stop
        style="stop-color:#e5e5e5;stop-opacity:1;"
@@ -97,7 +119,15 @@
      x1="1390.0085"
      y1="-253.4108"
      x2="2031.4185"
-     y2="-253.4108" /></defs>
+     y2="-253.4108" /><clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath661"><rect
+       style="fill:#aa0991;stroke-width:0.782772;stroke-linecap:square;stroke-miterlimit:1"
+       id="rect663"
+       width="2001.7114"
+       height="1525.2959"
+       x="6029.1445"
+       y="237.3813" /></clipPath></defs>
 <style
    type="text/css"
    id="style2">
@@ -109,7 +139,8 @@
 
 <g
    id="g51"
-   transform="translate(-6029.1445,-237.3813)">
+   transform="translate(-6029.1445,-237.3813)"
+   clip-path="url(#clipPath661)">
 	<path
    class="st0"
    d="m 1197.9812,1791.2092 v 62.9323 c 0,12.3998 10.3999,22.533 23.333,22.533 h 114.6648 c 12.9331,0 23.3329,-10.1332 23.3329,-22.533 v -0.4 l -111.7315,-49.0659 h 173.7306 v 72.5322 c 0,26.2663 -23.333,47.4659 -51.9992,47.4659 h -181.3304 c -28.6662,0 -51.9992,-21.1996 -51.9992,-47.4659 v -109.0649 c 0,-26.2663 23.333,-47.4659 51.9992,-47.4659 h 233.3296 v 47.9992 h -199.9968 c -12.9331,0 -23.333,10.1332 -23.333,22.533 z"
@@ -850,17 +881,17 @@
    transform="translate(-15.307006,98.010763)"><tspan
      x="19270.631"
      y="423.94688"
-     id="tspan3"><tspan
+     id="tspan942"><tspan
        style="font-weight:bold;font-size:120px"
-       id="tspan1">Avances</tspan><tspan
+       id="tspan938">Avances</tspan><tspan
        style="font-weight:300;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Light';baseline-shift:baseline"
-       id="tspan2">
+       id="tspan940">
 </tspan></tspan><tspan
      x="19270.631"
      y="563.28054"
-     id="tspan5"><tspan
+     id="tspan946"><tspan
        style="font-size:93.3333px"
-       id="tspan4">2023</tspan></tspan></text><g
+       id="tspan944">2023</tspan></tspan></text><g
    id="g1567-2-6-2-5"
    transform="matrix(0.3612868,0,0,-0.36058735,18223.634,464.22898)"
    style="fill:#e5e5e5;fill-opacity:1">
@@ -994,17 +1025,17 @@
    transform="translate(1866.2102,98.010821)"><tspan
      x="19270.631"
      y="423.94688"
-     id="tspan8"><tspan
+     id="tspan952"><tspan
        style="font-weight:bold;font-size:120px"
-       id="tspan6">Proyectos</tspan><tspan
+       id="tspan948">Proyectos</tspan><tspan
        style="font-weight:300;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Light';baseline-shift:baseline"
-       id="tspan7">
+       id="tspan950">
 </tspan></tspan><tspan
      x="19270.631"
      y="563.28054"
-     id="tspan10"><tspan
+     id="tspan956"><tspan
        style="font-size:93.3333px"
-       id="tspan9">Resumen</tspan></tspan></text><g
+       id="tspan954">Resumen</tspan></tspan></text><g
    id="g1567-2-6-2-5-2"
    transform="matrix(0.3612868,0,0,-0.36058735,20105.15,464.22905)"
    style="fill:#e5e5e5;fill-opacity:1">
