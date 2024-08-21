@@ -54,6 +54,8 @@
 
     <div class="navbar-menu" id="navbar">
         <div class="navbar-start">
+            <a id="menu-item" href="/icarus/" class="navbar-item">Icarus</a>
+            <a id="menu-item" href="/volta/" class="navbar-item">Volta</a>
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">Semilleros</a>
                 <div class="navbar-dropdown">
@@ -63,8 +65,6 @@
                     <a id="menu-item" href="/aerohub/" class="navbar-item">Aerohub</a>
                 </div>
             </div>
-            <a id="menu-item" href="/volta/" class="navbar-item">Volta</a>
-            <!-- <a id="menu-item" href="/icarus" class="navbar-item">Icarus</a> -->
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">Eventos</a>
                 <div class="navbar-dropdown">
@@ -146,7 +146,7 @@
 
 
 <div id="firstmissions-tab-content">
-<h2 class="subtitle"><b>Primera cohorte</b></h2>
+    <h2 class="subtitle"><b>Primera cohorte</b></h2>
     <div class="content">
         <p>La historia del Semillero de Investigación de Cohetería <span id="volta">Volta</span> se remonta a las aulas del curso de Diseño
             Conceptual Aeroespacial, un crisol de innovación que impulsó a los estudiantes de tercer semestre de Ingeniería
@@ -289,14 +289,12 @@
         $("#firstmissions-tab").addClass("is-active");
         $("#firstmissions-tab-content").removeClass("is-hidden");
     }
-
     function switchToTraining() {
         removeActive();
         hideAll();
         $("#training-tab").addClass("is-active");
         $("#training-tab-content").removeClass("is-hidden");
     }
-
     function switchToResearch() {
         removeActive();
         hideAll();

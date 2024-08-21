@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página web del grupo Icarus del semillero de aeronáutica y astronáutica Icarus, parte del pregrado de Ingeniería Aeroespacial de la Universidad de Antioquia.">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Icarus | Proyectos</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="canonical" href="https://astra-ae.co/icarus/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="/js/scripts.js"></script>
+
+    <style>
+        .menu-list a.is-active{
+            background-color: var(--voyager);
+            color: #fff;
+        }
+        .tabs li.is-active a{
+            color: var(--voyager);
+            border-bottom-color: var(--voyager);
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW62XH43P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BJW62XH43P');
+</script>
+</head>
+
+<nav class="navbar is-dark">
+    <div class="navbar-brand">
+        <a href="/" class="navbar-item">
+            <img src="/icons/astra_blanco.png" alt="ASTRA logo">
+        </a>
+
+        <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar" style="padding-right: 5em;">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </div>
+    </div>
+
+    <div class="navbar-menu" id="navbar">
+        <div class="navbar-start">
+            <a id="menu-item" href="/icarus/" class="navbar-item">Icarus</a>
+            <a id="menu-item" href="/volta/" class="navbar-item">Volta</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Semilleros</a>
+                <div class="navbar-dropdown">
+                    <a id="menu-item" href="/deltav/" class="navbar-item">Delta V</a>
+                    <a id="menu-item" href="/voyager/" class="navbar-item">Voyager</a>
+                    <hr class="navbar-divider">
+                    <a id="menu-item" href="/aerohub/" class="navbar-item">Aerohub</a>
+                </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Eventos</a>
+                <div class="navbar-dropdown">
+                    <a id="menu-item" href="/events/codeac/" class="navbar-item">CODEAC</a>
+                    <a id="menu-item" href="/events/cicta/" class="navbar-item">CICTA</a>
+                </div>
+            </div>
+            <a id="menu-item" href="/inprogress" class="navbar-item">En curso</a>
+            <a id="menu-item" href="/contact" class="navbar-item">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <!-- ! COLOR IS VOYAGER -->
+    <section class="hero is-halfheight-mobile is-voyager">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column is-9">
+                        <p class="title">Icarus</p>
+                        <hr id="color-grey">
+                        <p class="subtitle">Proyectos</p>
+                    </div>
+                    <!-- <div class="column is-3" id="position-logos_nav">
+                        <figure align="center"> 
+                            <img src="/icons/toño.png" alt="Mascota toño" id="size-logos_nav">
+                        </figure>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <aside class="menu">
+    <p class="menu-label">Información</p>
+    <ul class="menu-list">
+        <li><a id="menu-item" href="/icarus/">¿Quiénes somos?</a></li>
+        <!-- <li><a id="menu-item" href="/icarus/support">Apóyanos</a></li> -->
+        <li><a id="menu-item" href="/icarus/socials">Contacto</a></li>
+    </ul>
+    <p class="menu-label">Proceso</p>
+    <ul class="menu-list">
+        <li><a id="menu-item" href="/icarus/projects">Proyectos</a></li>
+        <li><a id="menu-item" href="/icarus/dbf">Design, Build, Fly</a></li>
+    </ul>
+</aside>
+                </div>
+
+                <div class="column is-9">
+                    <head>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+
+
+<div class="tabs is-centered">
+    <ul>
+        <li id="Aeromodelismo-tab" class="is-active">
+            <a onClick="switchToAeromodelismo()">
+                <span class="icon is-small"><i class="fa-solid fa-plane"></i></span>
+                <span>Aeromodelismo</span>
+            </a>
+        </li>
+        <li id="FlyingWing-tab">
+            <a onClick="switchToFlyingWing()">
+                <span class="icon is-small"><i class="fa-solid fa-v"></i></span>
+                <span>Ala Volante</span>
+            </a>
+        </li>
+        <li id="CropCopter-tab">
+            <a onClick="switchToCropCopter()">
+                <span class="icon is-small"><i class="fa-solid fa-life-ring"></i></span>
+                <span>CropCopter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<div id="Aeromodelismo-tab-content">
+    <h1 class="title">Aeromodelismo</h1>
+    <div class="content">
+        <p>Esta linea de investigación tiene como objetivo el aprendizaje y profundización de conocimientos
+            teóricos y prácticos relacionados con la aeronáutica. A continuación se presentan los proyectos
+            de la linea:</p>
+    </div>
+
+    <div class="content">
+        <img class="badges" src="https://img.shields.io/badge/-En%20curso-FFDD56" alt="">
+
+        <div class="columns is-multiline is-vcentered">
+            <div class="column is-one-third">
+                <img id="img-logos" src="/img/voyager/blueprint_aeromodelling.png" alt="Aeromodelling blueprint">
+            </div>
+            <div class="column">
+                <p>Este proyecto busca diseñar, construir y volar aeromodelos con el fin de entender los
+                    conceptos aeronáuticos generales y específicos que sirvan de base para una futura
+                    investigación mas profunda en esta area de conocimiento.</p>
+                <p>Actualmente, se están diseñando y construyendo prototipos, experimentando con diferentes
+                    configuraciones aerodinámicas y variados métodos de manufactura. Además con ayuda de
+                    telemetría, realizamos un monitoreo del desempeño de la aeronave.</p>
+                <p>A continuación puedes ver unos de nuestros modelos, Icar-3W:</p>
+            </div>
+        </div>
+
+        <div class="columns is-multiline is-vcentered">
+            <div class="column is-6">
+                <div align="center">
+                    <model-viewer src="/models/voyager/icarus_dumbo.glb" shadow-intensity="3" camera-controls
+                        touch-action="pan-y" camera-orbit="-55deg 80deg 1" ar ar-scale="fixed"
+                        style="width:100%; height:400px;" alt="Muestra 3D - Icarus Dumbo">
+                    </model-viewer>
+                    <figcaption class="is-caption">Modelo 3D de 'Dumbo'</figcaption>
+                </div>
+            </div>
+            <div class="column is-6">
+                <div align="center">
+                    <model-viewer src="/models/voyager/icarus_gallinazo.glb" shadow-intensity="3" camera-controls
+                        touch-action="pan-y" camera-orbit="-55deg 80deg 1" ar ar-scale="fixed"
+                        style="width:100%; height:400px;" alt="Muestra 3D - Icarus Gallinazo">
+                    </model-viewer>
+                    <figcaption class="is-caption">Modelo 3D de 'Gallinazo'</figcaption>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="subtitle">Objetivos del proyecto</h2>
+    <div class="content">
+        <ul>
+            <li>Pronosticar y simular el desempeño de la aeronave teniendo en cuenta los efectos de su
+                diseño a la hora del vuelo.</li>
+            <li>Explorar técnicas de manufactura, implementarlas en los diseños y mejorar su técnica.</li>
+            <li>Crear métodos de diseño de aeronaves que agilicen el proceso conceptual, teniendo en cuenta
+                las restricciones y requerimientos de cada misión de la aeronave.</li>
+            <li>Generar investigación en la aeronáutica y sus aplicaciones en diferentes industrias.</li>
+        </ul>
+    </div>
+
+
+    <h2 class="subtitle">Contacto</h2>
+    <div class="content">
+        <p>Si deseas conocer mas información sobre el proyecto, contacta con <b>Mateo Lezama</b> al 
+            correo <a href="mailto:mateo.lezamaf@udea.edu.co"><u>mateo.lezamaf@udea.edu.co</u></a>.</p>
+    </div>
+</div>
+
+
+<div class="is-hidden" id="CropCopter-tab-content">
+    <h1 class="title">CropCopter</h1>
+    <div class="content">
+        <img class="badges" src="https://img.shields.io/badge/-En%20curso-FFDD56" alt="">
+        
+        <div class="columns is-multiline is-vcentered">
+            <div class="column is-one-third">
+                <img id ="img-logos" src="/img/voyager/blueprint_cropcopter.png" alt="Cropcopter blueprint">
+            </div>
+            <div class="column">
+                <p>Este proyecto busca agilizar la ubicación y recolección de los frutos maduros, revisión de 
+                las plantas, existencia de plagas y ubicación de diferentes tipos de frutos, con un enfoque 
+                principal a la planta del café.</p>
+                <p>Actualmente se está en el proceso de lectura de investigaciones previas acerca de este 
+                tipo de drones en el sector y de comparación de opciones para el desarrollo de la investigación 
+                a futuro. Adicionalmente, se aprovechará un dron de venta libre para analizarlo y realizar 
+                ingeniería inversa a sus partes, practicar vuelos y realizar diferentes trayectorias en 
+                zonas verdes para almacenar archivos multimedia para su posterior análisis.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="subtitle">Objetivos del proyecto</h2>
+    <div class="content">
+        <ul>
+            <li>Diseñar un dron de alta eficiencia aerodinámica y equipado con tecnología avanzada de 
+                aviónica, centrado en la implementación de la inteligencia artificial.</li>
+            <li>Mejorar las prácticas en el sector agricultor Colombiano por medio del análisis de plantas 
+                en el sector de la agricultura de precisión.</li>
+        </ul>
+    </div>
+
+    <h2 class="subtitle">Contacto</h2>
+    <div class="content">
+        <p>Si deseas conocer mas información sobre el proyecto, contacta con <b>Hamilton Giraldo</b> al 
+            correo <a href="mailto:hamilton.giraldo@udea.edu.co"><u>hamilton.giraldo@udea.edu.co</u></a>.</p>
+    </div>
+</div>
+
+
+<div class="is-hidden" id="FlyingWing-tab-content">
+    <h1 class="title">Ala volante</h1>
+    <div class="content">
+        <img class="badges" src="https://img.shields.io/badge/-En%20curso-FFDD56" alt="">
+
+        <div class="columns is-multiline is-vcentered">
+            <div class="column is-one-third">
+                <img id ="img-logos" src="/img/voyager/blueprint_flyingwing.png" alt="Flying wing blueprint">
+            </div>
+            <div class="column">
+                <p>Este proyecto se centra en el diseño y desarrollo de una aeronave que fusiona su fuselaje 
+                y alas en una estructura continua, este enfoque busca obtener una mayor eficiencia aerodinámica 
+                y reducir la resistencia al avance generada por la aeronave.</p>
+                <p>Se emplean herramientas de modelado y simulación para analizar el comportamiento aerodinámico 
+                y la resistencia estructural del diseño propuesto con el objetivo de aumentar su eficiencia 
+                aerodinámica. Además, se llevan a cabo investigaciones sobre materiales compuestos y técnicas 
+                de manufactura para obtener una estructura liviana pero resistente.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="subtitle">Objetivos del proyecto</h2>
+    <div class="content">
+        <ul>
+            <li>Diseñar una aeronave que aproveche la configuración de ala volante para lograr una mayor 
+                eficiencia aerodinámica.</li>
+            <li>Garantizar la estabilidad y la maniobrabilidad de un ala volante, manteniendo una actitud 
+                estable, segura y precisa durante el vuelo.</li>
+            <li>Someter el diseño a diferentes tipos pruebas para validar su rendimiento y comportamiento 
+                en condiciones reales.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script>
+    function switchToAeromodelismo() {
+        removeActive();
+        hideAll();
+        $("#Aeromodelismo-tab").addClass("is-active");
+        $("#Aeromodelismo-tab-content").removeClass("is-hidden");
+    }
+    function switchToCropCopter() {
+        removeActive();
+        hideAll();
+        $("#CropCopter-tab").addClass("is-active");
+        $("#CropCopter-tab-content").removeClass("is-hidden");
+    }
+    function switchToFlyingWing() {
+        removeActive();
+        hideAll();
+        $("#FlyingWing-tab").addClass("is-active");
+        $("#FlyingWing-tab-content").removeClass("is-hidden");
+    }
+
+    function removeActive() {
+        $("li").each(function () {
+            $(this).removeClass("is-active");
+        });
+    }
+
+    function hideAll() {
+        $("#Aeromodelismo-tab-content").addClass("is-hidden");
+        $("#CropCopter-tab-content").addClass("is-hidden");
+        $("#FlyingWing-tab-content").addClass("is-hidden");
+    }
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <div class="content has-text-centered is-small">
+        <p><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/unidades-academicas/ingenieria/estudiar-facultad/pregrados/ingenieria-aeroespacial" target="_blank">Ingeniería Aeroespacial</a> 
+            | 
+            <a href="https://www.udea.edu.co/" target="_blank">Universidad de Antioquia</a></p>
+    </div>
+</footer>
+
+</html>

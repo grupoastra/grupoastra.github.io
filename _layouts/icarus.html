@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="robots" content="{{ page.robots }}">
+    <title>Icarus | {{ page.title }}</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="canonical" href="https://astra-ae.co/icarus/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="/js/scripts.js"></script>
+
+    <style>
+        .menu-list a.is-active{
+            background-color: var(--voyager);
+            color: #fff;
+        }
+        .tabs li.is-active a{
+            color: var(--voyager);
+            border-bottom-color: var(--voyager);
+        }
+    </style>
+
+    {% include analytics.html %}
+</head>
+
+{% include navbar.html %}
+
+<body>
+    <!-- ! COLOR IS VOYAGER -->
+    <section class="hero is-halfheight-mobile is-voyager">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column is-9">
+                        <p class="title">Icarus</p>
+                        <hr id="color-grey">
+                        <p class="subtitle">{{ page.title }}</p>
+                    </div>
+                    <!-- <div class="column is-3" id="position-logos_nav">
+                        <figure align="center"> 
+                            <img src="/icons/toño.png" alt="Mascota toño" id="size-logos_nav">
+                        </figure>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    {% include menu_icarus.html %}
+                </div>
+
+                <div class="column is-9">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% include footer.html %}
+
+</html>
