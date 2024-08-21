@@ -7,6 +7,11 @@ robots: "noindex,nofollow"
 ---
 
 
+<head>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+
+
 <div class="content">
     <p>Design, Build & Fly (<b>DBF</b>) es una competencia de aeronaves organizada anualmente por el Instituto
         Americano de Aeronáutica y Astronáutica (<b>AIAA</b>), con el objetivo de que estudiantes de todo el mundo 
@@ -40,5 +45,14 @@ robots: "noindex,nofollow"
                 <figcaption class="is-caption">Equipo 'Icarus'</figcaption>
             </div>
         </div>
+    </div>
+
+    <p>A continuación puedes observar nuestra aeronave participante en 'Design, Build, Fly - 2024', <b>Dumbo</b>.</p>
+    <div align="center">
+        <model-viewer src="/models/voyager/icarus_dumbo.glb" shadow-intensity="3" camera-controls
+            touch-action="pan-y" camera-orbit="-55deg 80deg 1" ar ar-scale="fixed"
+            style="width:50%; height:400px;" alt="Muestra 3D - Icarus Dumbo">
+        </model-viewer>
+        <figcaption class="is-caption">Modelo 3D de 'Dumbo'</figcaption>
     </div>
 </div>
