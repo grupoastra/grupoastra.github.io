@@ -19,6 +19,7 @@
 }
 
 
+
 /* *----- Custom variables -----* */
 #voyager {
     font-weight: bold;
@@ -38,15 +39,15 @@
 /* *----- IDs -----* */
 /* Horizontal Bar */
 #color-grey {
-    height: 1px;
+    height: 0.075rem;
     background-color: #cccccc;
 }
 
 /* Sizes */
-#size-logos_nav { width: 8em; vertical-align: middle; }
-#size-logos_index { width: 12em; }
-#size-logos_contact { width: 14em; }
-#size-logos_groups { width: 20em; }
+#size-logos_nav { width: 8rem; vertical-align: middle; }
+#size-logos_index { width: 12rem; }
+#size-logos_contact { width: 14rem; }
+#size-logos_groups { width: 14rem; }
 
 /* Navbar logo */
 #position-logos_nav { align-self: center; }
@@ -58,7 +59,6 @@
     position: inherit;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px var(--primary);
     border-radius: var(--bordervalue);
 }
 .slideshow-normal{
@@ -71,7 +71,7 @@
 
 /* Custom ids */
 #voyager-size-mobile{
-    width: 80%;
+    width: 45rem;
 }
 
 
@@ -187,17 +187,19 @@ iframe { border-radius: var(--bordervalue); }
 }
 
 
+
+
 @media screen and (max-width: 768px) {
     /* *----- IDs -----* */
     #slideshow{
         width: 100%;
-        height: 300px;
+        height: 400px;
     }
     #voyager-size-mobile{
         width: 100%;
     }
     
-    
+
 
     /* *----- CLASSES -----* */
     /* Custom config */
